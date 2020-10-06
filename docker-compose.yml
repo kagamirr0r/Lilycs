@@ -25,7 +25,7 @@ services:
   front:
     build: ./front/
     volumes:
-      - ./:/usr/src/app
+      - ./front:/usr/src/app/front
     command: sh -c "cd front && yarn start"
     ports:
       - "8000:3000"
